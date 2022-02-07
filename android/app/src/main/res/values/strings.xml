@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Rent and Drive</string>
+    <string name="facebook_app_id">lol</string>
+               <string name="fb_login_protocol_scheme">fblol</string>
+</resources>

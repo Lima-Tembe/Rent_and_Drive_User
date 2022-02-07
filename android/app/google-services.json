@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "918152295024",
+    "project_id": "rent-and-drive-214af",
+    "storage_bucket": "rent-and-drive-214af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918152295024:android:30cfa8c507e9990d9bbab5",
+        "android_client_info": {
+          "package_name": "com.flutterflow.edriveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918152295024-ecov3qn0o0s56duph9r14rqv5gkhipda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-pPSNTyUlVn4GF7Tk0EGDJ_LbRBafZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918152295024-ecov3qn0o0s56duph9r14rqv5gkhipda.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "918152295024-kq3peq95dr3dkqt5km4fpq4he1lncq8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.rentanddriveadmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918152295024:android:841aa9ca6beafa799bbab5",
+        "android_client_info": {
+          "package_name": "com.flutterflow.rentanddriveadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918152295024-ehkd3m5e7gnq2a3oco477e6badhsir6c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.rentanddriveadmin",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "918152295024-ecov3qn0o0s56duph9r14rqv5gkhipda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-pPSNTyUlVn4GF7Tk0EGDJ_LbRBafZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918152295024-ecov3qn0o0s56duph9r14rqv5gkhipda.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "918152295024-kq3peq95dr3dkqt5km4fpq4he1lncq8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.rentanddriveadmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918152295024:android:06153b223f7a675b9bbab5",
+        "android_client_info": {
+          "package_name": "com.flutterflow.rentedrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918152295024-rvavqs069gfl180a1eu71td32qdi8dkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.rentedrive",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "918152295024-ecov3qn0o0s56duph9r14rqv5gkhipda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-pPSNTyUlVn4GF7Tk0EGDJ_LbRBafZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918152295024-ecov3qn0o0s56duph9r14rqv5gkhipda.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "918152295024-kq3peq95dr3dkqt5km4fpq4he1lncq8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.rentanddriveadmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
