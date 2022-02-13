@@ -19,28 +19,26 @@ class InvoiceInfo {
   final String description;
   final String number;
   final DateTime date;
-  final DateTime dueDate;
 
   const InvoiceInfo({
     this.description,
     this.number,
     this.date,
-    this.dueDate,
   });
 }
 
 class InvoiceItem {
-  final String description;
+  final String car;
   final DateTime date;
-  final int quantity;
-  final double vat;
-  final double unitPrice;
+  final DateTime dueDate;
+  final int days;
+  final double price;
 
   const InvoiceItem({
-    this.description,
+    this.car,
     this.date,
-    this.quantity,
-    this.vat,
-    this.unitPrice,
+    this.dueDate,
+    this.days,
+    this.price,
   });
 }

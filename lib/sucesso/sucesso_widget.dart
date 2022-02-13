@@ -1,21 +1,35 @@
+import 'package:rent_and_drive/backend/backend.dart';
+
+import '../api/pdf_api.dart';
+import '../api/pdf_invoice_api.dart';
 import '../auth/auth_util.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../homepage/homepage_widget.dart';
 import '../flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../model/customer.dart';
+import '../model/invoice.dart';
+import '../model/supplier.dart';
 
 class SucessoWidget extends StatefulWidget {
   const SucessoWidget({
     Key key,
     this.price,
+    this.carRef,
+    this.days,
+    this.dueDate,
+    this.startDate,
   }) : super(key: key);
 
   final String price;
+  final CarsRecord carRef;
+  final int days;
+  final DateTime dueDate;
+  final DateTime startDate;
 
   @override
   _SucessoWidgetState createState() => _SucessoWidgetState();
@@ -197,8 +211,37 @@ class _SucessoWidgetState extends State<SucessoWidget> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     FFButtonWidget(
-                      onPressed: () {
+                      onPressed: () async {
                         print('Button pressed ...');
+                        final date = DateTime.now();
+
+                        final invoice = Invoice(
+                            supplier: Supplier(
+                              name: 'Rent & Drive',
+                              address: 'ISCTEM',
+                            ),
+                            customer: Customer(
+                              name: currentUserDocument?.displayName,
+                              address: currentUserDocument?.email,
+                            ),
+                            info: InvoiceInfo(
+                              date: date,
+                              description: 'Meu pedido...',
+                              number: '${date.microsecond}',
+                            ),
+                            items: [
+                              InvoiceItem(
+                                car: widget.carRef.name,
+                                date: widget.startDate,
+                                dueDate: widget.dueDate,
+                                days: widget.days + 1,
+                                price: widget.carRef.price.toDouble(),
+                              )
+                            ]);
+
+                        final pdfFile = await PdfInvoiceApi.generate(invoice);
+
+                        PdfApi.openFile(pdfFile);
                       },
                       text: 'BAIXAR RECIBO',
                       options: FFButtonOptions(

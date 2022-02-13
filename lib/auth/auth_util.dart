@@ -1,10 +1,8 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import '../flutter_flow/flutter_flow_util.dart';
 
 import '../backend/backend.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:stream_transform/stream_transform.dart';
 import 'firebase_user_provider.dart';
 
@@ -25,7 +23,7 @@ Future<User> signInOrCreateAccount(
   } on FirebaseAuthException catch (e) {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Error: ${e.message}')),
+      SnackBar(content: Text('Erro: ${e.message}')),
     );
     return null;
   }
@@ -42,12 +40,12 @@ Future resetPassword({String email, BuildContext context}) async {
   } on FirebaseAuthException catch (e) {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Error: ${e.message}')),
+      SnackBar(content: Text('Erro: ${e.message}')),
     );
     return null;
   }
   ScaffoldMessenger.of(context).showSnackBar(
-    SnackBar(content: Text('Password reset email sent')),
+    SnackBar(content: Text('Verifique seu email para redefinir a senha!')),
   );
 }
 
