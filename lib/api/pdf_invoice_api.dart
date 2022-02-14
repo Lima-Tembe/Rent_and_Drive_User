@@ -37,11 +37,11 @@ class PdfInvoiceApi {
             children: [
               buildSupplierAddress(invoice.supplier),
               Container(
-                height: 50,
-                width: 50,
+                height: 150,
+                width: 150,
                 child: BarcodeWidget(
                   barcode: Barcode.qrCode(),
-                  data: invoice.info.number,
+                  data: "invoice.info.number",
                 ),
               ),
             ],
